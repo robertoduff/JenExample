@@ -1,10 +1,20 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('Build1') {
             steps {
-                sh 'echo "successful! ant"; exit 0'
+                sh 'echo "successful build 1"; exit 0'
             }
         }
+        stage('Build2') {
+            steps {
+                sh 'copy_file'
+            }
+        }
+        stage('Test 2') {
+            steps {
+                sh 'cat rob.log'
+            }
+        }   
     }
 }
