@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build2') {
             steps {
-                sh 'copy_file'
+                sh './copy_file'
             }
         }
         stage('Test 2') {
