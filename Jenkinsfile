@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Build2') {
             steps {
+                sh 'ls -l'
                 sh './copy_file'
             }
         }
