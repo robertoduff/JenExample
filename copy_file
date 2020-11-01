@@ -1,4 +1,4 @@
 #!/bin/ksh
 #
-printf "Thiis is my file\n" > rob.log
+printf "This is my file\n" > rob.log
 exit 0
